@@ -1,0 +1,28 @@
+T.mat,          sid 91, 104, 234
+matrisdata.mat, sid 101
+co2.data        sid 104, 351
+stalplat.mat    sid 105
+markyta.txt     sid 105
+tempvekt.mat    sid 124
+pict0012.jpg    sid 136
+T8183.mat       sid 173
+parism.jpg      sid 175
+basketper.avi   sid 178
+basketper0001.jpeg -- basketper0014.jpeg
+plankton.mat    sid 190
+signal3.mat     sid 191
+CCD.mat         sid 191
+prague.jpg      sid 192
+01469.jpg       sid 193
+PICT0001.AVI    sid 193
+PICT0001_0001.jpg -- PICT0001_0060.jpg
+ein1.jpg        sid 274 
+ein2.jpg
+tree.mat        sid 297
+01426.jpg       sid 298
+bild.bmp        sid 300
+DSCF0576.jpg    sid 305
+DSCF0577.jpg
+oscillation.mat sid 343
+aktivitet.mat   sid 346
+uteliggare.mat  sid 348
