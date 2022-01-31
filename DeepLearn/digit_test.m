@@ -4,9 +4,12 @@ y = zeros(10,10000);
 for i = 1:10000
     y(labels(i)+1,i) = 1;
 end
+
 images = test(:,2:785);
 images = images/255;
+
 images = images';
+
 we34 = matfile('wfour.mat');
 w4 = we34.w34;
 we23 = matfile('wthree.mat');
@@ -21,6 +24,7 @@ bi12 = matfile('btwo.mat');
 b2 = bi12.b12;
 success = 0;
 n = 10000;
+
 for i = 1:n
 out2 = elu(w2*images(:,i)+b2);
 out3 = elu(w3*out2+b3);
@@ -33,11 +37,14 @@ for k = 1:10
         big = out(k);
     end
 end
+
 if labels(i) == num
     success = success + 1;
 end
     
+
 end
+
 fprintf('Accuracy: ');
 fprintf('%f',success/n*100);
 disp(' %');

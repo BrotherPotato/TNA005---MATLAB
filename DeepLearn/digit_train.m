@@ -1,14 +1,19 @@
 data = load('mnist_train.csv');
+
 labels = data(:,1);
 y = zeros(10,60000); %Correct outputs vector
 for i = 1:60000
     y(labels(i)+1,i) = 1;
 end
+
 images = data(:,2:785);
 images = images/255;
+
 images = images'; %Input vectors
+
 hn1 = 80; %Number of neurons in the first hidden layer
 hn2 = 60; %Number of neurons in the second hidden layer
+
 %Initializing weights and biases
 w12 = randn(hn1,784)*sqrt(2/784);
 w23 = randn(hn2,hn1)*sqrt(2/hn1);
@@ -16,8 +21,10 @@ w34 = randn(10,hn2)*sqrt(2/hn2);
 b12 = randn(hn1,1);
 b23 = randn(hn2,1);
 b34 = randn(10,1);
+
 %learning rate
 eta = 0.0058;
+
 %Initializing errors and gradients
 error4 = zeros(10,1);
 error3 = zeros(hn2,1);
@@ -28,8 +35,11 @@ errortot2 = zeros(hn1,1);
 grad4 = zeros(10,1);
 grad3 = zeros(hn2,1);
 grad2 = zeros(hn1,1);
+
 epochs = 50;
+
 m = 10; %Minibatch size
+
 for k = 1:epochs %Outer epoch loop
     
     batches = 1;
@@ -66,6 +76,7 @@ for k = 1:epochs %Outer epoch loop
     grad4 = grad4 + error4*a3';
     grad3 = grad3 + error3*a2';
     grad2 = grad2 + error2*a1';
+
     end
     
     %Gradient descent
@@ -83,6 +94,7 @@ for k = 1:epochs %Outer epoch loop
     disp(k) %Track number of epochs
     [images,y] = shuffle(images,y); %Shuffles order of the images for next epoch
 end
+
 disp('Training done!')
 %Saves the parameters
 save('wfour.mat','w34');
