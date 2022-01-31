@@ -1,3 +1,4 @@
+%https://se.mathworks.com/matlabcentral/fileexchange/73010-mnist-neural-network-training-and-testing
 data = load('mnist_train.csv');
 
 labels = data(:,1);
