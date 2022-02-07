@@ -5,3 +5,4 @@ x = A\b
 x = linspace(0, 20);
 y = -2 + x + sin(x);
 plot(x,y)
+%% 
