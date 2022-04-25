@@ -1,5 +1,5 @@
 function theta = angle(t)
-
+%theta
 temp = t;
 
 if temp <= 0
