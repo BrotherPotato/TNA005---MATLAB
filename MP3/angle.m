@@ -1,6 +1,12 @@
 function theta = angle(t)
 %theta
-temp = sin(t);
+%temp = sin(t);
+temp = -2.18 + 0.00978 * t - 6.15 * 10^-6 * t.^2 - 5.84 * 10^-9 * t.^3;
+
+y = zeros(1,length(t));
+y(1:200) = 3*pi/4;
+
+
 
 if temp <= 0 && temp >= pi/4
     theta = 0;
