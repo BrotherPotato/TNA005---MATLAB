@@ -14,13 +14,13 @@ y(675:800) = 3*pi/4;
 if tSpecific < 50
     theta = pi;
 elseif tSpecific < 125
-    theta = 3*pi/4;
+
 elseif tSpecific < 400
-    theta = 5*pi/4;
+
 elseif tSpecific < 675
-    theta = pi;
+
 elseif tSpecific < 800
-    theta = 3*pi/4;
+
 end
 
 % if temp <= 0 && temp >= pi/4
@@ -41,5 +41,5 @@ end
 %     theta = 7*pi/4;
 % end
 
-%theta = y;
+theta = y;
 end

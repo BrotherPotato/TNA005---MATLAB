@@ -1,9 +1,13 @@
-function uT = uTFunk(t)
+function [ux, uy] = uTFunk(t)
 
 km = 2000;
-uT = zeros(2,1);
-uT(1) = km * cos(angle(t));
-uT(2) = km * sin(angle(t));
+ux = zeros(1,length(t));
+uy = zeros(1,length(t));
+
+for n = 1:length(t)
+    ux(n) = km * cos(angle(t(n)));
+    uy(n) = km * sin(angle(t(n)));
+end
 
 
 end

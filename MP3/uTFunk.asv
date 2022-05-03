@@ -1,0 +1,12 @@
+function uT = uTFunk(t)
+
+km = 2000;
+uT = zeros(2,length(t));
+
+for n = 1:length(t)
+    uT(1,n) = km * cos(angle(t));
+    uT(2,n) = km * sin(angle(t));
+end
+
+
+end
