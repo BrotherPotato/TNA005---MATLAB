@@ -13,8 +13,10 @@ function theta = angle(t)
 % theta = y;
 
 if t < 50
-    theta = pi;
+    theta = 3*pi/4;
 elseif t < 125
+    theta = pi/2;
+elseif t < 200
     theta = 3*pi/4;
 elseif t < 400
     theta = 5*pi/4;
@@ -25,7 +27,7 @@ elseif t < 800
 else 
     theta = pi;
 end
-
+%theta
 
 
 % if temp >= pi/4 %temp <= 0 && 

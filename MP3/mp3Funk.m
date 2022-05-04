@@ -18,6 +18,12 @@ km = 2000;
 %dxy(1) = -c./m .* sqrt((xy(2)).^2 + (xy(4)).^2) .* xy(2) + mDeriv./m .* ux;
 %dxy(2) = -c./m .* sqrt((xy(2)).^2 + (xy(4)).^2) .* xy(4) + mDeriv./m .* uy - g;
 
+% dxy = [
+%       'x
+%       ''x
+%       'y
+%       ''y}
+
 dxy = [xy(2)
     (-c/m)*sqrt(xy(2)^2+xy(4)^2)*xy(2)+(dm/m)*ux
     xy(4)
