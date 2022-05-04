@@ -5,7 +5,7 @@ t = linspace(a, b, n+1);
 h = t(2) - t(1);
 y = zeros(length(xy1),n+1);
 
-y(1,:) =xy1;
+y(:,1) =xy1;
 
 for i=1:n+1
     k1 = fun(t(i), y(:,i));
