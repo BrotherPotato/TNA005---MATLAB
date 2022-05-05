@@ -11,7 +11,7 @@ km = 2000;
 
 %ux = km * cos(angle(t));
 %uy = km * sin(angle(t));
-t
+t;
 
 [m,dm] = mass(t);
 [ux, uy] = uTFunk(t);

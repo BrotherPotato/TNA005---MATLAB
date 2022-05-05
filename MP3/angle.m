@@ -27,7 +27,7 @@ elseif t < 800
 else 
     theta = pi;
 end
-%theta
+theta
 
 
 % if temp >= pi/4 %temp <= 0 && 
