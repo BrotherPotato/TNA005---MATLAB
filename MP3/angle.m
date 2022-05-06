@@ -1,4 +1,4 @@
-function theta = angle(t) % mer perfekta vinklar
+function theta = angle(t) % mer perfekta vinklar, inte 0 och 800
 %theta
 %temp = sin(t);
 %temp = -2.18 + 0.00978 * t - 6.15 * 10^-6 * t.^2 - 5.84 * 10^-9 * t.^3;
@@ -13,7 +13,7 @@ function theta = angle(t) % mer perfekta vinklar
 % theta = y;
 
 if t < 50
-    theta = 3*pi/4;
+    theta = 5*pi/4;
 elseif t < 125
     theta = pi/2;
 elseif t < 200
@@ -27,7 +27,7 @@ elseif t < 800
 else 
     theta = pi;
 end
-theta
+theta;
 
 
 % if temp >= pi/4 %temp <= 0 && 

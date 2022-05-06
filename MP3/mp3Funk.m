@@ -23,11 +23,14 @@ t;
 %       x''
 %       y'
 %       y''}
+t;
+ux;
+uy;
 
 dxy = [xy(2)
-    (-c/m)*sqrt(xy(2)^2+xy(4)^2)*xy(2)+(dm/m)*ux
+    (-c/m) * sqrt(xy(2)^2 + xy(4)^2) * xy(2) + (dm/m) * ux
     xy(4)
-    (-c/m)*sqrt(xy(2)^2+xy(4)^2)*xy(4)+(dm/m)*uy-g];
+    (-c/m) * sqrt(xy(2)^2 + xy(4)^2) * xy(4) + (dm/m) * uy - g];
 %dxy = dxy';
 
 end

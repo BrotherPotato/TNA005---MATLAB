@@ -9,7 +9,11 @@ elseif t > 40 % ta bort krav?
     mD = 0;
 end
 
-mD;
+if 0 <= t && t <= 40 
+
+elseif
+
+end
 
 m;
 end
