@@ -29,17 +29,15 @@ function theta = angle(t) % mer perfekta vinklar, inte 0 och 800
 % end
 % theta;
 
-t = t*60; % this is prob wrong
-
-if t < 100
+if t < 50
     theta = 5*pi/4;
-elseif t < 325
+elseif t < 125
     theta = pi/2;
-elseif t < 375
+elseif t < 200
     theta = 3*pi/4;
-elseif t < 600
+elseif t < 400
     theta = 5*pi/4;
-elseif t < 775
+elseif t < 675
     theta = pi;
 elseif t < 800
     theta = 3*pi/4;
