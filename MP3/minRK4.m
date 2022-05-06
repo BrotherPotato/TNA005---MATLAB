@@ -1,4 +1,4 @@
-function [t,y] = minRK4(fun, tspan, y1, n)
+function [t,y] = minRK4(fun, tspan, y1, n) % anpassa (:,1) , undersök globalt trunkeringsfel
 a = tspan(1);
 b = tspan(2);
 t = linspace(a, b, n+1);

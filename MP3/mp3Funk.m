@@ -1,4 +1,4 @@
-function dxy  = mp3Funk(t,xy)
+function dxy  = mp3Funk(t,xy) % transponera output
 
 c = 0.25; % kg/m
 g = 9.82; % m/s^2
@@ -19,10 +19,10 @@ t;
 %dxy(2) = -c./m .* sqrt((xy(2)).^2 + (xy(4)).^2) .* xy(4) + mDeriv./m .* uy - g;
 
 % dxy = [
-%       'x
-%       ''x
-%       'y
-%       ''y}
+%       x'
+%       x''
+%       y'
+%       y''}
 
 dxy = [xy(2)
     (-c/m)*sqrt(xy(2)^2+xy(4)^2)*xy(2)+(dm/m)*ux
