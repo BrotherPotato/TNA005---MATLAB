@@ -31,9 +31,9 @@ function theta = angle(t) % mer perfekta vinklar, inte 0 och 800
 
 t;
 
-if t < 4
+if t < 2
     theta = 3*pi/4;
-elseif t < 6
+elseif t < 4
     theta = pi/2;
 elseif t < 13
     theta = 3*pi/2;
