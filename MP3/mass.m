@@ -4,12 +4,11 @@ m = 40;
 if 0 <= t && t <= 40 
     m = 40 - 0.5 * t;
     mD = -0.5;
-elseif t > 40 % ta bort krav?
+elseif t > 40
     m = 20;
     mD = 0;
 end
 
-mD;
-
-m;
+%mD;
+%m;
 end
